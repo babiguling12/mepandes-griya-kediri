@@ -288,12 +288,12 @@ footer li {
     width: 3rem;
     height: 3rem;
     font-size: 3rem;
-    position: fixed;
-    bottom: 2.5rem;
-    right: 2rem;
+    position: fixed;    /* Tetap menggunakan fixed agar ikon tetap terlihat saat scroll */
+    bottom: 1.5rem;     /* Disesuaikan agar tidak terlalu dekat dengan tepi bawah */
+    right: 1.5rem;      /* Disesuaikan agar tidak terlalu dekat dengan tepi kanan */
     cursor: pointer;
     color: white;
-    opacity: 0.5;
+    opacity: 0.8;       /* Sedikit lebih terlihat */
     mix-blend-mode: difference;
     animation: rotating 4s linear infinite;
     transform-origin: center;
@@ -301,7 +301,13 @@ footer li {
     justify-content: center;
     align-items: center;
     line-height: 0;
+    z-index: 9999;      /* Nilai z-index tinggi agar selalu di atas elemen lain */
+    border-radius: 50%; /* Membuat bentuk bulat jika diinginkan */
+    background-color: rgba(0, 0, 0, 0.3); /* Latar belakang semi-transparan */
+    padding: 0.5rem;    /* Sedikit padding untuk tampilan lebih baik */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus */
 }
+
 
 @keyframes rotating {
     from {
