@@ -153,7 +153,7 @@
                   Ida Ayu Dyah Pradnyandari Dewi S, A.Md.Kes.
                 </h3>
                 <div data-aos="fade-left">
-                  <p>a.k.a <span style="font-weight: bold">Gek Diah</span></p>
+                  <p>a.k.a <span style="font-weight: bold">Gek Dyah</span></p>
                   <p>
                     Anak kedua dari pasangan
                     <span style="font-weight: bold"
@@ -413,7 +413,7 @@
           <div class="col-12">
             <div class="mb-3">
               <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama" />
+              <input type="text" class="form-control" id="nama" name="nama" required/>
             </div>
           </div>
           <div class="col-12">
@@ -428,14 +428,15 @@
                 max="10"
                 length="1"
                 value="1"
+                required
               />
             </div>
           </div>
           <div class="col-12">
             <div class="mb-3">
               <label for="status" class="form-label">Konfirmasi</label>
-              <select name="status" id="status" class="form-select">
-                <option selected>Pilih salah satu</option>
+              <select name="status" id="status" class="form-select" required>
+                <option value="" selected disabled>Pilih salah satu</option>
                 <option value="Hadir">Hadir</option>
                 <option value="Tidak Hadir">Tidak Hadir</option>
               </select>
@@ -579,6 +580,20 @@
             lambda: (root, n) => (n > 1 ? root + "" : root),
           },
         },
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const offcanvasElement = document.getElementById("offcanvasExample");
+        const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+        const navLinks = document.querySelectorAll(".offcanvas-body .nav-link");
+
+        navLinks.forEach(link => {
+          link.addEventListener("click", function () {
+            offcanvas.hide(); // Menutup offcanvas setelah klik menu
+          });
+        });
       });
     </script>
 
