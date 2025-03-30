@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mepandes Griya Kediri</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="dist/themes/default.css" />
+    <script src="dist/simplyCountdown.umd.js"></script>
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Griya Kediri</h1>
+        <p>Akan melangsungkan upacara Manusa Yadnya (Mepandes) dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"
+          >Lihat Undangan</a
+        >
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"> Mepandes Griya Kediri </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Mepandes Griya Kediri
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rspv">RSPV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 data-aos="fade-up">Om Swastyastu</h2>
+            <p data-aos="fade-up">
+              Atas Asung Kerta Wara Nugraha Ida Sang Hyang Widhi Wasa/Tuhan yang
+              Maha Esa, kami bermaksud mengundang Bapak/Ibu/Saudara/i, pada
+              Acara Manusa Yadnya Mepandes (Potong Gigi) putra putri kami Yang
+              akan diselenggarakan pada:
+            </p>
+            <h3 data-aos="fade-up">
+              Senin, 7 Juli 2025 di Griya Kediri, Kerambitan, Tabanan.
+            </h3>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3 data-aos="fade-right">Ida Ayu Sinta Sasmita Dewi S</h3>
+                <div data-aos="fade-right">
+                  <p>a.k.a <span style="font-weight: bold">Gek Sinta</span></p>
+                  <p>
+                    Anak pertama dari pasangan
+                    <span style="font-weight: bold"
+                      >Bpk. Ida Bagus Ngurah Yuliarta
+                    </span>
+                    dan <br />
+                    <span style="font-weight: bold"
+                      >Ibu. Ida Ayu Puja Astuti</span
+                    >.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4" data-aos="fade-right">
+                <img
+                  src="img/profil/raka-sinta.jpg"
+                  alt="Raka Sinta"
+                  class="img-responsive rounded-circle mb-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4" data-aos="fade-left">
+                <img
+                  src="img/profil/raka-diah.jpg"
+                  alt="Raka Dyah"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3 data-aos="fade-left">Ida Ayu Dyah Pradnyandari Dewi S</h3>
+                <div data-aos="fade-left">
+                  <p>a.k.a <span style="font-weight: bold">Gek Diah</span></p>
+                  <p>
+                    Anak kedua dari pasangan
+                    <span style="font-weight: bold"
+                      >Bpk. Ida Bagus Ngurah Yuliarta
+                    </span>
+                    dan <br />
+                    <span style="font-weight: bold"
+                      >Ibu. Ida Ayu Puja Astuti</span
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3 data-aos="fade-right">Ida Bagus Putu Sudarma Putra S</h3>
+                <div data-aos="fade-right">
+                  <p>a.k.a <span style="font-weight: bold">Gustu</span></p>
+                  <p>
+                    Anak pertama dari pasangan
+                    <span style="font-weight: bold"
+                      >Bpk. Ida Bagus Nyoman Kusuma Wijaya
+                    </span>
+                    dan <br />
+                    <span style="font-weight: bold"
+                      >Ibu. Anak Agung Ayu Silawati</span
+                    >.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4" data-aos="fade-right">
+                <img
+                  src="img/profil/gustos.jpg"
+                  alt="Gustu"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5">
+            <div class="row">
+              <div class="col-4" data-aos="fade-left">
+                <img
+                  src="img/profil/dek-uti.jpg"
+                  alt="Gek Putri"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3 data-aos="fade-left">Ida Ayu Putri Maharani Dewi S</h3>
+                <div data-aos="fade-left">
+                  <p>a.k.a <span style="font-weight: bold">Gek Putri</span></p>
+                  <p>
+                    Anak kedua dari pasangan
+                    <span style="font-weight: bold"
+                      >Bpk. Ida Bagus Nyoman Kusuma Wijaya
+                    </span>
+                    dan <br />
+                    <span style="font-weight: bold"
+                      >Ibu. Anak Agung Ayu Silawati</span
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2 data-aos="fade-up">Informasi Acara</h2>
+            <p class="alamat" data-aos="fade-up">
+              Alamat: Griya Kediri <br />
+              Jl. Wirabumi, Br. Tengah Kangin, Kerambitan, Kec. Kerambitan,
+              Kabupaten Tabanan, Bali
+            </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1635.9004533908806!2d115.08062866155396!3d-8.5461131542739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzInNDYuNSJTIDExNcKwMDQnNTEuMyJF!5e0!3m2!1sid!2sid!4v1743316149678!5m2!1sid!2sid"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              data-aos="zoom-in"
+            ></iframe>
+
+            <a
+              href="https://maps.app.goo.gl/h334oK41SuNjWeoH6"
+              target="_blank"
+              class="btn btn-light mt-2"
+              data-aos="fade-up"
+              >📍Klik untuk membuka peta</a
+            >
+            <p class="description" data-aos="fade-up">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada tanda - tanda sedang dilangsungkan upacara
+              Mepandes, boleh jadi anda salah jadwal atau salah tempat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10" data-aos="fade-right">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Puncak Acara</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>07.00 - 12.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Senin, 7 Juli 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Upacara Mepandes Berlangsung</div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-10" data-aos="fade-left">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi Acara</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>15.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Senin, 7 Juli 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Resepsi After Mepandes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container px-3">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2 data-aos="fade-up">Gallery Foto</h2>
+            <p data-aos="">
+              Gallery ini menampilkan foto prewedding sebelum upacara Mepandes,
+              menggambarkan keindahan, kebahagiaan, dan kesiapan dalam balutan
+              adat Bali.
+            </p>
+            <span data-aos="fade-up">Klik foto untuk memperbesar</span>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-md-3 row-cols-sm-2 row-cols-1 g-3 justify-content-center gallery-container"
+          data-aos="fade-up"
+        >
+          <div class="col mt-3">
+            <a href="img/gallery/DSC_1623.jpg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thumbnail/thumb_DSC_1623.jpg"
+                alt="Perempuan only"
+                class="img-fluid w-100 rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/DSC_1631.jpg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thumbnail/thumb_DSC_1631.jpg"
+                alt="Perempuan only"
+                class="img-fluid w-100 rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/DSC_1767.jpg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thumbnail/thumb_DSC_1767.jpg"
+                alt="Perempuan only"
+                class="img-fluid w-100 rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/DSC_1784.jpg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thumbnail/thumb_DSC_1784.jpg"
+                alt="Perempuan only"
+                class="img-fluid w-100 rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/DSC_1844.jpg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thumbnail/thumb_DSC_1844.jpg"
+                alt="Perempuan only"
+                class="img-fluid w-100 rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/DSC_1905.jpg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thumbnail/thumb_DSC_1905.jpg"
+                alt="Perempuan only"
+                class="img-fluid w-100 rounded gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/DSC_1935.jpg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thumbnail/thumb_DSC_1935.jpg"
+                alt="Perempuan only"
+                class="img-fluid w-100 rounded gallery-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container px-3">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2 data-aos="fade-up">Konfirmasi Kehadiran</h2>
+            <p data-aos="fade-up">
+              Isi form di bawah ini untuk melakukan konfirmasi kehadiran anda.
+            </p>
+          </div>
+        </div>
+
+        <form
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbz2Wf7YSPJmSxVVrOS6_HYxJBf4UyWihVB7IA8j7LvVICKeyFzd0RlLYj30ZBk9VfSn/exec"
+          id="my-form"
+          data-aos="fade-up"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+                min="1"
+                max="10"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary" type="submit">Kirim</button>
+          </div>
+        </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6" data-aos="fade-up">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+              var disqus_config = function () {
+                this.page.url = window.location.href; // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = windqow.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://mepandes-griya-kediri.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; Mepandes Griya Kediri 2025. All Rights Reserved.</small
+            >
+            <small class="block"
+              >Developed by
+              <a href="https://instagram.com/sudarma.putraaa" target="_blank"
+                >@sudarma.putraaa</a
+              >.</small
+            >
+
+            <ul class="mt-3">
+              <li>
+                <a href="https://instagram.com/sudarma.putraaa" target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@sudarmaputraaa"
+                  target="_blank"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/share/1B3vyB2gHC/?mibextid=qi2Omg"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@goestuuu?_t=ZS-8v6h3HoBN7H&_r=1"
+                  target="_blank"
+                  ><i class="bi bi-tiktok"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/backsound-mepandes-web.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2025, // Target year (required)
+        month: 7, // Target month [1-12] (required)
+        day: 7, // Target day [1-31] (required)
+        words: {
+          // Custom labels, with lambda for plurals
+          days: {
+            root: "hari",
+            lambda: (root, n) => (n > 1 ? root + "" : root),
+          },
+          hours: {
+            root: "jam",
+            lambda: (root, n) => (n > 1 ? root + "" : root),
+          },
+          minutes: {
+            root: "menit",
+            lambda: (root, n) => (n > 1 ? root + "" : root),
+          },
+          seconds: {
+            root: "detik",
+            lambda: (root, n) => (n > 1 ? root + "" : root),
+          },
+        },
+      });
+    </script>
+
+    <script>
+      const rootElement = document.documentElement; // Ambil elemen <html>
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const audio = document.getElementById("song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        // Paksa scroll ke bagian atas sebelum mengunci scroll
+        window.scrollTo(0, 0);
+
+        // Tambahkan CSS untuk menonaktifkan scroll
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
+
+        // Pastikan posisi tetap tidak berubah
+        document.body.style.position = "fixed";
+        document.body.style.top = "0"; // Diubah dari scrollTop agar tidak nge-freeze
+        document.body.style.width = "100%";
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        // Hapus efek yang menonaktifkan scroll
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+        document.body.style.position = "";
+        document.body.style.top = "";
+        document.body.style.width = "";
+
+        // Pastikan scroll tetap ke atas saat diaktifkan
+        window.scrollTo(0, 0);
+
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem('opened', 'true');
+        playAudio();
+      }
+      function playAudio() {
+        audio.volume = 0.2;
+        audio.play();
+        isPlaying = true;
+
+        audioIconWrapper.style.display = "block";
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          audio.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          audio.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if(!localStorage.getItem('opened')) {
+      // }
+
+      // Paksa kembali ke atas saat halaman di-refresh
+      window.addEventListener("load", () => {
+        window.scrollTo(0, 0);
+        disableScroll();
+      });
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+
+          fetch(action, {
+            method: "POST",
+            body: data,
+          })
+            .then((response) => response.text()) // Menunggu respons dari server
+            .then((data) => {
+              Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Berhasil Terkirim!",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+              form.reset(); // Reset form setelah sukses
+            })
+            .catch((error) => {
+              Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Gagal Mengirim!",
+                text: "Coba lagi nanti.",
+                showConfirmButton: true,
+              });
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
