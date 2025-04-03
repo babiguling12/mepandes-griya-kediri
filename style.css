@@ -343,10 +343,15 @@ footer li {
         margin-bottom: 1.5rem; /* Berikan jarak antara kedua div */
       }
 
-      .rsvp button {
-        font-size: 1.5rem;
-        margin-bottom: 2px;
+      .form-label {
+        font-size: 2rem;
       }
+      .form-control, .form-select, .btn-submit {
+        font-size: 1.5rem;
+        min-width: 100px; /* Supaya tidak terlalu kecil */
+        margin-bottom: 5px;
+      }
+
       /* .rsvp button {
         font-size: 1.5rem;
         display: inline-block;

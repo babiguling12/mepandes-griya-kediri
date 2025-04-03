@@ -253,7 +253,7 @@
             <a
               href="https://maps.app.goo.gl/ws5ZWcwi1bnM49pv9"
               target="_blank"
-              class="btn btn-light mt-2"
+              class="btn btn-light mt-3"
               data-aos="fade-up"
               >📍Klik untuk membuka peta</a
             >
@@ -404,36 +404,18 @@
         </div>
 
         <form
-          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          class="d-flex justify-content-center align-items-center flex-wrap gap-2 w-100"
           method="POST"
-          action="https://script.google.com/macros/s/AKfycbz2Wf7YSPJmSxVVrOS6_HYxJBf4UyWihVB7IA8j7LvVICKeyFzd0RlLYj30ZBk9VfSn/exec"
+          action="https://script.google.com/macros/s/AKfycbwRlapWn_89UemKsjQYgABTk1kMRjSUv0iocKe9V6nzlw7ey6hfe42_3ZxJ2yA3YtwY/exec"
           id="my-form"
           data-aos="fade-up"
         >
-          <div class="col-12">
-            <div class="mb-3">
+          <div class="d-flex flex-column">
               <label for="nama" class="form-label">Nama</label>
               <input type="text" class="form-control" id="nama" name="nama" required/>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="jumlah" class="form-label">Jumlah</label>
-              <input
-                type="number"
-                class="form-control"
-                id="jumlah"
-                name="jumlah"
-                min="1"
-                max="10"
-                length="1"
-                value="1"
-                required
-              />
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
+          
+          <div class="d-flex flex-column">
               <label for="status" class="form-label">Konfirmasi</label>
               <select name="status" id="status" class="form-select" required>
                 <option value="" selected disabled>Pilih salah satu</option>
@@ -441,9 +423,9 @@
                 <option value="Tidak Hadir">Tidak Hadir</option>
               </select>
             </div>
-          </div>
-          <div class="col-12" style="margin-top: 35px">
-            <button class="btn btn-primary" type="submit">Kirim</button>
+          
+          <div class="d-flex align-self-end">
+            <button class="btn btn-primary btn-submit" type="submit">Kirim</button>
           </div>
         </form>
 
@@ -685,8 +667,11 @@
     <script>
       window.addEventListener("load", function () {
         const form = document.getElementById("my-form");
+        const submitButton = form.querySelector("button[type='submit']");
         form.addEventListener("submit", function (e) {
           e.preventDefault();
+          submitButton.disabled = true; // Matikan tombol saat mengirim
+
           const data = new FormData(form);
           const action = e.target.action;
 
@@ -704,6 +689,11 @@
                 timer: 1500,
               });
               form.reset(); // Reset form setelah sukses
+
+              // Aktifkan kembali tombol setelah 3 detik
+              setTimeout(() => {
+                submitButton.disabled = false;
+              }, 3000);
             })
             .catch((error) => {
               Swal.fire({
@@ -713,6 +703,7 @@
                 text: "Coba lagi nanti.",
                 showConfirmButton: true,
               });
+              submitButton.disabled = false; // Aktifkan kembali tombol jika gagal
             });
         });
       });
