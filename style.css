@@ -1,8 +1,5 @@
 html {
   color-scheme: only light; /* maksa biar browser nya tetep pake mode terang */
-  background-color: white !important;
-  filter: invert(0) !important;
-  background-blend-mode: normal !important;
 }
 
 :root {
@@ -15,10 +12,6 @@ body {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     min-height: 4000px;
-    background-color: white !important;
-    color: black !important;
-    filter: invert(0) !important;
-    background-blend-mode: normal !important;
 }
 
 .hero::before {
