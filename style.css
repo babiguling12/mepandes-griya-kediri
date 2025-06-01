@@ -390,6 +390,10 @@ footer li {
         margin-bottom: 5px;
         margin-top: 5px;
     }
+
+    .info .description {
+        font-size: 1.3rem;
+    }
 }
 
 /* mobile */
