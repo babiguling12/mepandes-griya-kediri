@@ -1,7 +1,7 @@
 :root {
     --gold: #FFB22C;
-    --bg : #0a0a0a;
-    --shadow : 0 2px 2px rgba(0, 0, 0, 0.5);
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -32,8 +32,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Overlay gelap */
-    z-index: -1; /* Harus di atas gambar tapi di bawah teks */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Overlay gelap */
+    z-index: -1;
+    /* Harus di atas gambar tapi di bawah teks */
 }
 
 .hero {
@@ -41,8 +43,8 @@ body {
     min-height: 100vh;
 }
 
-.hero h1, 
-.hero h4, 
+.hero h1,
+.hero h4,
 .hero p {
     text-shadow: var(--shadow);
 }
@@ -82,7 +84,7 @@ body {
     height: 100vh;
 }
 
-.mynavbar .navbar-brand, 
+.mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
     font-family: 'Sacramento', cursive;
     font-size: 2.5rem;
@@ -94,7 +96,7 @@ body {
 }
 
 .home {
-    background-image: url(img/pattern.png);  
+    background-image: url(img/pattern.png);
     background-size: cover;
     min-height: 100vh;
     margin-top: -4rem;
@@ -209,20 +211,25 @@ body {
 }
 
 .gallery-img {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan awal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Bayangan awal */
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .gallery-container:hover .gallery-img {
-    filter: grayscale(100%); /* Semua gambar menjadi grayscale */
+    filter: grayscale(100%);
+    /* Semua gambar menjadi grayscale */
     transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .gallery-container:hover .gallery-img:hover {
-    filter: grayscale(0%) brightness(1.1); /* Gambar yang di-hover tetap berwarna & lebih cerah */
-    transform: scale(1.05); /* Memperbesar gambar sedikit */
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6), 
-                0 0 30px 10px rgba(0, 162, 255, 0.5); /* Glow biru */
+    filter: grayscale(0%) brightness(1.1);
+    /* Gambar yang di-hover tetap berwarna & lebih cerah */
+    transform: scale(1.05);
+    /* Memperbesar gambar sedikit */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6),
+        0 0 30px 10px rgba(0, 162, 255, 0.5);
+    /* Glow biru */
 }
 
 .gallery-container:hover .gallery-img:not(:hover) {
@@ -288,12 +295,16 @@ footer li {
     width: 3rem;
     height: 3rem;
     font-size: 3rem;
-    position: fixed;    /* Tetap menggunakan fixed agar ikon tetap terlihat saat scroll */
-    bottom: 1.5rem;     /* Disesuaikan agar tidak terlalu dekat dengan tepi bawah */
-    right: 1.5rem;      /* Disesuaikan agar tidak terlalu dekat dengan tepi kanan */
+    position: fixed;
+    /* Tetap menggunakan fixed agar ikon tetap terlihat saat scroll */
+    bottom: 1.5rem;
+    /* Disesuaikan agar tidak terlalu dekat dengan tepi bawah */
+    right: 1.5rem;
+    /* Disesuaikan agar tidak terlalu dekat dengan tepi kanan */
     cursor: pointer;
     color: white;
-    opacity: 0.8;       /* Sedikit lebih terlihat */
+    opacity: 0.8;
+    /* Sedikit lebih terlihat */
     mix-blend-mode: difference;
     animation: rotating 4s linear infinite;
     transform-origin: center;
@@ -301,11 +312,16 @@ footer li {
     justify-content: center;
     align-items: center;
     line-height: 0;
-    z-index: 9999;      /* Nilai z-index tinggi agar selalu di atas elemen lain */
-    border-radius: 50%; /* Membuat bentuk bulat jika diinginkan */
-    background-color: rgba(0, 0, 0, 0.3); /* Latar belakang semi-transparan */
-    padding: 0.5rem;    /* Sedikit padding untuk tampilan lebih baik */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+    z-index: 9999;
+    /* Nilai z-index tinggi agar selalu di atas elemen lain */
+    border-radius: 50%;
+    /* Membuat bentuk bulat jika diinginkan */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Latar belakang semi-transparan */
+    padding: 0.5rem;
+    /* Sedikit padding untuk tampilan lebih baik */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Bayangan halus */
 }
 
 
@@ -313,6 +329,7 @@ footer li {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -324,8 +341,8 @@ footer li {
     html {
         font-size: 75%;
     }
-    
-    
+
+
 }
 
 /* tablet */
@@ -340,19 +357,24 @@ footer li {
     }
 
     .couple .col-lg-6 {
-        margin-bottom: 1.5rem; /* Berikan jarak antara kedua div */
-      }
+        margin-bottom: 1.5rem;
+        /* Berikan jarak antara kedua div */
+    }
 
-      .form-label {
+    .form-label {
         font-size: 2rem;
-      }
-      .form-control, .form-select, .btn-submit {
-        font-size: 1.5rem;
-        min-width: 100px; /* Supaya tidak terlalu kecil */
-        margin-bottom: 5px;
-      }
+    }
 
-      /* .rsvp button {
+    .form-control,
+    .form-select,
+    .btn-submit {
+        font-size: 1.6rem;
+        min-width: 120px;
+        /* Supaya tidak terlalu kecil */
+        margin-bottom: 5px;
+    }
+
+    /* .rsvp button {
         font-size: 1.5rem;
         display: inline-block;
         position: absolute;
@@ -361,6 +383,13 @@ footer li {
         margin-bottom: 100px; Tambahkan jarak bawah
         margin-right: 8px;
       } */
+
+    .info a {
+        font-size: 1.6rem;
+        min-width: 120px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
 }
 
 /* mobile */
