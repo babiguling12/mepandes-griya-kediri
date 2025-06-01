@@ -1,5 +1,5 @@
 html {
-  color-scheme: only light;
+  color-scheme: only light; /* maksa biar browser nya tetep pake mode terang */
 }
 
 :root {
@@ -421,7 +421,7 @@ footer li {
     }
 }
 
-/* Tambahan untuk mencegah pengaruh dark mode OS */
+/* Tambahan untuk mencegah pengaruh dark mode OS
 @media (prefers-color-scheme: dark) {
     :root {
         --gold: #FFB22C;
@@ -512,4 +512,4 @@ footer li {
         color: white !important;
         background-color: rgba(0, 0, 0, 0.3) !important;
     }
-}
+} */
