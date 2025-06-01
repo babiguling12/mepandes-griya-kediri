@@ -394,6 +394,20 @@ footer li {
     .info .description {
         font-size: 1.3rem;
     }
+    
+    .gallery p,
+    .rsvp p,
+    .info span {
+        font-size: 1.1rem;
+    }
+
+    .gallery span {
+        font-size: 1rem;
+    }
+
+    .hero a {
+        font-size: 1.5rem;
+    }
 }
 
 /* mobile */
