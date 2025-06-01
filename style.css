@@ -1,3 +1,7 @@
+html {
+  color-scheme: only light;
+}
+
 :root {
     --gold: #FFB22C;
     --bg: #0a0a0a;
