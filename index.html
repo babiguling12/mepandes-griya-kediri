@@ -38,7 +38,7 @@
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h4 id="guest-greeting">Kepada Bapak/Ibu/Saudara/i,</h4>
         <h1>Griya Kediri</h1>
         <p class="mb-3">
           Akan melangsungkan upacara Manusa Yadnya (Mepandes) dalam:
@@ -492,7 +492,9 @@
                 <div
                   class="d-flex justify-content-between align-items-start mb-3"
                 >
-                  <div class="bank-logo"><img src="img/logo/bca.webp" alt="bca"></div>
+                  <div class="bank-logo">
+                    <img src="img/logo/bca.webp" alt="bca" />
+                  </div>
                   <button
                     class="copy-btn"
                     onclick="copyToClipboard('6115537290', this)"
@@ -511,7 +513,9 @@
                 <div
                   class="d-flex justify-content-between align-items-start mb-3"
                 >
-                  <div class="bank-logo"><img src="img/logo/mandiri.webp" alt="mandiri"></div>
+                  <div class="bank-logo">
+                    <img src="img/logo/mandiri.webp" alt="mandiri" />
+                  </div>
                   <button
                     class="copy-btn"
                     onclick="copyToClipboard('1750003358875', this)"
@@ -530,7 +534,9 @@
                 <div
                   class="d-flex justify-content-between align-items-start mb-3"
                 >
-                  <div class="bank-logo"><img src="img/logo/bri.webp" alt="bri"></div>
+                  <div class="bank-logo">
+                    <img src="img/logo/bri.webp" alt="bri" />
+                  </div>
                   <button
                     class="copy-btn"
                     onclick="copyToClipboard('464301017479539', this)"
@@ -539,7 +545,10 @@
                   </button>
                 </div>
                 <div class="account-number">4643 0101 7479 539</div>
-                <div class="account-name">Ida Bagus Putu Sudarma Putra <br> a.n Ida Bagus Nyoman Kusuma Wijaya</div>
+                <div class="account-name">
+                  Ida Bagus Putu Sudarma Putra <br />
+                  a.n Ida Bagus Nyoman Kusuma Wijaya
+                </div>
               </div>
             </div>
 
@@ -549,7 +558,9 @@
                 <div
                   class="d-flex justify-content-between align-items-start mb-3"
                 >
-                  <div class="bank-logo"><img src="img/logo/bni.webp" alt="bni"></div>
+                  <div class="bank-logo">
+                    <img src="img/logo/bni.webp" alt="bni" />
+                  </div>
                   <button
                     class="copy-btn"
                     onclick="copyToClipboard('0485469810', this)"
@@ -558,7 +569,10 @@
                   </button>
                 </div>
                 <div class="account-number">048 546 9810</div>
-                <div class="account-name">Ida Ayu Putri Maharani Dewi <br> a.n Ida Bagus Nyoman Kusuma Wijaya</div>
+                <div class="account-name">
+                  Ida Ayu Putri Maharani Dewi <br />
+                  a.n Ida Bagus Nyoman Kusuma Wijaya
+                </div>
               </div>
             </div>
           </div>
@@ -732,6 +746,21 @@
           });
         });
       });
+    </script>
+
+    <script>
+      // Ambil parameter ?to= dari URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const guestName = urlParams.get("to");
+
+      // Jika ada parameter to, ubah bagian greeting
+      if (guestName) {
+        const greeting = document.getElementById("guest-greeting");
+        const decodedName = decodeURIComponent(guestName.replace(/\+/g, " "));
+        greeting.textContent = `Kepada Yth. ${decodedName},`;
+      } else {
+        greeting.textContent = "Kepada Bapak/Ibu/Saudara/i,";
+      }
     </script>
 
     <script>
