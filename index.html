@@ -40,7 +40,9 @@
       <main>
         <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
         <h1>Griya Kediri</h1>
-        <p class="mb-3">Akan melangsungkan upacara Manusa Yadnya (Mepandes) dalam:</p>
+        <p class="mb-3">
+          Akan melangsungkan upacara Manusa Yadnya (Mepandes) dalam:
+        </p>
         <div class="simply-countdown"></div>
         <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"
           >Lihat Undangan</a
@@ -375,7 +377,7 @@
               />
             </a>
           </div>
-           <div class="col mt-3">
+          <div class="col mt-3">
             <a href="img/gallery/DSC_1807.webp" data-toggle="lightbox">
               <img
                 src="img/gallery/thumbnail/thumb_DSC_1807.webp"
@@ -470,7 +472,119 @@
           </div>
         </form>
 
-        <div class="row justify-content-center mt-5">
+        <!-- New Bank Account Section -->
+        <div class="container px-3 bank-container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <h2 data-aos="fade-up">Amplop Digital</h2>
+              <p data-aos="fade-up">
+                Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
+                Dan jika ingin memberikan tanda kasih, Anda dapat mengirimkannya
+                melalui:
+              </p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mt-4">
+            <!-- BCA Card -->
+            <div class="col-lg-6 col-md-6 col-12 mb-3" data-aos="fade-up">
+              <div class="bank-card bca">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <div class="bank-logo"><img src="img/logo/bca.webp" alt="bca"></div>
+                  <button
+                    class="copy-btn"
+                    onclick="copyToClipboard('6115537290', this)"
+                  >
+                    <i class="bi bi-copy"></i> Salin
+                  </button>
+                </div>
+                <div class="account-number">611 553 7290</div>
+                <div class="account-name">Ida Ayu Sinta Sasmitha Dewi</div>
+              </div>
+            </div>
+
+            <!-- Mandiri Card -->
+            <div class="col-lg-6 col-md-6 col-12 mb-3" data-aos="fade-up">
+              <div class="bank-card mandiri">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <div class="bank-logo"><img src="img/logo/mandiri.webp" alt="mandiri"></div>
+                  <button
+                    class="copy-btn"
+                    onclick="copyToClipboard('1750003358875', this)"
+                  >
+                    <i class="bi bi-copy"></i> Salin
+                  </button>
+                </div>
+                <div class="account-number">1750 0033 58875</div>
+                <div class="account-name">Ida Ayu Dyah Pradnyandari Dewi</div>
+              </div>
+            </div>
+
+            <!-- BRI Card -->
+            <div class="col-lg-6 col-md-6 col-12 mb-3" data-aos="fade-up">
+              <div class="bank-card bri">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <div class="bank-logo"><img src="img/logo/bri.webp" alt="bri"></div>
+                  <button
+                    class="copy-btn"
+                    onclick="copyToClipboard('464301017479539', this)"
+                  >
+                    <i class="bi bi-copy"></i> Salin
+                  </button>
+                </div>
+                <div class="account-number">4643 0101 7479 539</div>
+                <div class="account-name">Ida Bagus Putu Sudarma Putra <br> a.n Ida Bagus Nyoman Kusuma Wijaya</div>
+              </div>
+            </div>
+
+            <!-- BNI Card -->
+            <div class="col-lg-6 col-md-6 col-12 mb-2" data-aos="fade-up">
+              <div class="bank-card bni">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <div class="bank-logo"><img src="img/logo/bni.webp" alt="bni"></div>
+                  <button
+                    class="copy-btn"
+                    onclick="copyToClipboard('0485469810', this)"
+                  >
+                    <i class="bi bi-copy"></i> Salin
+                  </button>
+                </div>
+                <div class="account-number">048 546 9810</div>
+                <div class="account-name">Ida Ayu Putri Maharani Dewi <br> a.n Ida Bagus Nyoman Kusuma Wijaya</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mt-1">
+            <div class="col-md-8 col-10 text-center">
+              <p class="disclamer" style="color: white">
+                <i class="bi bi-info-circle"></i>
+                Klik tombol "Salin" untuk menyalin nomor rekening dengan mudah
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container kartu mb-5">
+          <div class="wrapper" data-aos="fade-up">
+            <div class="lid one"></div>
+            <div class="lid two"></div>
+            <div class="envelope"></div>
+            <div class="letter">
+              <p>Matur Suksma🙏</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
           <div class="col-md-6" data-aos="fade-up">
             <div id="disqus_thread"></div>
             <script>
@@ -747,6 +861,34 @@
               submitButton.disabled = false; // Aktifkan kembali tombol jika gagal
             });
         });
+      });
+    </script>
+
+    <script>
+      function copyToClipboard(text, button) {
+        navigator.clipboard.writeText(text).then(() => {
+          const originalText = button.innerHTML;
+          button.innerHTML = '<i class="bi bi-check-circle"></i> Disalin!';
+          setTimeout(() => {
+            button.innerHTML = originalText;
+          }, 2000);
+        });
+      }
+    </script>
+
+    <script>
+      // 1. Pilih elemen .wrapper
+
+      const wrapper = document.querySelector(".wrapper"); // 2. Tambahkan 'event listener' untuk mendeteksi klik
+
+      wrapper.addEventListener("click", () => {
+        // 3. Tambah/hapus (toggle) class 'open' pada elemen wrapper
+
+        //    Saat di-klik pertama kali, class 'open' ditambahkan.
+
+        //    Saat di-klik lagi, class 'open' dihapus.
+
+        wrapper.classList.toggle("open");
       });
     </script>
   </body>
